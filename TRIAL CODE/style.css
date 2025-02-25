@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #f953c6, #b91d73);
+}
+
+/* Layout */
+.container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+/* Sidebar Heading */
+.sidebar h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Sidebar Navigation */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+.sidebar ul li:hover {
+    background: #f953c6;
+    color: white;
+    transform: scale(1.05); /* Slight scale-up */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Profile Section */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.post {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.05);
+    border: 2px solid #f953c6;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+.sidebar img{
+    top: 40px;
+    left: 230px;
+    position: absolute;
+}
+
